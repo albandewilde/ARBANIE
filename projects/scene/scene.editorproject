@@ -17,17 +17,17 @@
 		},
 		{
 			"bindedMeshes": [
-				"f824df87-ae33-41d9-ba8f-551d2083a2be",
-				"d66c05ad-967f-4f69-a6fb-7d47281b641c"
+				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
 			],
-			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
+			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
 			"isMultiMaterial": false
 		},
 		{
 			"bindedMeshes": [
-				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
+				"f824df87-ae33-41d9-ba8f-551d2083a2be",
+				"d66c05ad-967f-4f69-a6fb-7d47281b641c"
 			],
-			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
+			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -46,16 +46,16 @@
 		}
 	],
 	"textures": [
+		"blaster_diffuse.jpg-83.json",
 		"blaster_nmap.jpg-84.json",
 		"parking.env-82.json",
-		"blaster_diffuse.jpg-83.json",
 		"EnvironmentBRDFTexture0-17.json"
 	],
 	"meshes": [
-		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
-		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
+		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"wall-f824df87-ae33-41d9-ba8f-551d2083a2be.json",
+		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
 		"cube-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
 		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json"
 	],
@@ -142,20 +142,20 @@
 			"script": {},
 			"postProcesses": {
 				"ssao": {
-					"enabled": true,
+					"enabled": false,
 					"json": {
 						"tags": null,
-						"totalStrength": 2,
-						"maxZ": 1000,
+						"totalStrength": 1.3,
+						"maxZ": 250,
 						"minZAspect": 0.2,
-						"samples": 32,
+						"samples": 16,
 						"textureSamples": 1,
 						"_ratio": {
 							"ssaoRatio": 0.5,
 							"blurRatio": 0.5
 						},
 						"expensiveBlur": true,
-						"radius": 1,
+						"radius": 3.5,
 						"base": 0,
 						"_name": "ssao",
 						"customType": "SSAO2RenderingPipeline"
@@ -184,7 +184,7 @@
 						"lensFlareBlurWidth": 512,
 						"depthOfFieldDistance": 10,
 						"depthOfFieldBlurWidth": 64,
-						"motionStrength": 0.1,
+						"motionStrength": 0.2,
 						"objectBasedMotionBlur": false,
 						"_ratio": 1,
 						"BloomEnabled": false,
@@ -202,7 +202,7 @@
 					}
 				},
 				"default": {
-					"enabled": true,
+					"enabled": false,
 					"json": {
 						"tags": null,
 						"sharpenEnabled": false,
@@ -213,11 +213,11 @@
 						"bloomWeight": 0.15,
 						"bloomThreshold": 0.9,
 						"bloomScale": 0.5,
-						"bloomEnabled": false,
+						"bloomEnabled": true,
 						"depthOfFieldEnabled": false,
 						"depthOfFieldBlurLevel": 0,
-						"fxaaEnabled": true,
-						"samples": 4,
+						"fxaaEnabled": false,
+						"samples": 1,
 						"imageProcessingEnabled": true,
 						"glowLayerEnabled": false,
 						"chromaticAberrationEnabled": false,
@@ -287,9 +287,9 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 5.8818515782066685,
-			"beta": 1.0735855152777,
-			"radius": 3.689921918850634,
+			"alpha": 4.880018683972746,
+			"beta": 1.3003160185451923,
+			"radius": 3.6899219188506334,
 			"target": [
 				3.6685266494750977,
 				0.9389764666557312,
@@ -323,9 +323,9 @@
 			],
 			"speed": 2,
 			"position": [
-				6.653962628474282,
-				2.6989804193344638,
-				2.073344633198766
+				4.261791123510428,
+				1.9249026188473413,
+				-0.16566218827160784
 			],
 			"upVector": [
 				0,
@@ -400,7 +400,24 @@
 	},
 	"postProcesses": {
 		"ssao": {
-			"enabled": false
+			"enabled": false,
+			"json": {
+				"tags": null,
+				"totalStrength": 1.3,
+				"maxZ": 250,
+				"minZAspect": 0.2,
+				"samples": 16,
+				"textureSamples": 1,
+				"_ratio": {
+					"ssaoRatio": 0.5,
+					"blurRatio": 0.5
+				},
+				"expensiveBlur": true,
+				"radius": 3.5,
+				"base": 0,
+				"_name": "ssao",
+				"customType": "SSAO2RenderingPipeline"
+			}
 		},
 		"standard": {
 			"enabled": true,
@@ -425,7 +442,7 @@
 				"lensFlareBlurWidth": 512,
 				"depthOfFieldDistance": 10,
 				"depthOfFieldBlurWidth": 64,
-				"motionStrength": 0.1,
+				"motionStrength": 0.2,
 				"objectBasedMotionBlur": false,
 				"_ratio": 1,
 				"BloomEnabled": false,
@@ -454,11 +471,11 @@
 				"bloomWeight": 0.15,
 				"bloomThreshold": 0.9,
 				"bloomScale": 0.5,
-				"bloomEnabled": false,
+				"bloomEnabled": true,
 				"depthOfFieldEnabled": false,
 				"depthOfFieldBlurLevel": 0,
-				"fxaaEnabled": true,
-				"samples": 4,
+				"fxaaEnabled": false,
+				"samples": 1,
 				"imageProcessingEnabled": true,
 				"glowLayerEnabled": false,
 				"chromaticAberrationEnabled": false,

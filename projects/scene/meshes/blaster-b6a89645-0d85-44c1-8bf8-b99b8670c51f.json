@@ -4,7 +4,7 @@
 		{
 			"name": "blaster",
 			"id": "b6a89645-0d85-44c1-8bf8-b99b8670c51f",
-			"uniqueId": 15,
+			"uniqueId": 14,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
@@ -52,7 +52,7 @@
 			"isBlocker": false,
 			"parentId": "2e391261-067a-4ec6-8b00-25d7e0738684",
 			"isUnIndexed": false,
-			"geometryId": "7112a1e3-996a-4e61-9707-eda6a34ce48c",
+			"geometryId": "caec1384-9ebe-4ed3-b032-9fe9ebf3b8f8",
 			"subMeshes": null,
 			"materialId": "71ce380f-e971-41c0-b580-e3e91b316c6f",
 			"metadata": {
@@ -65,14 +65,14 @@
 			"layerMask": 268435455,
 			"alphaIndex": 1000,
 			"hasVertexAlpha": false,
-			"overlayAlpha": 0.5,
+			"overlayAlpha": 0.3,
 			"overlayColor": [
 				1,
 				0,
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/7112a1e3-996a-4e61-9707-eda6a34ce48c.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/caec1384-9ebe-4ed3-b032-9fe9ebf3b8f8.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.376800000667572,
 				0.07209999859333038,

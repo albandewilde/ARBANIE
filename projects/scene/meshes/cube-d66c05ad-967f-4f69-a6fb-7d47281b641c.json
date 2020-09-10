@@ -4,7 +4,7 @@
 		{
 			"name": "cube",
 			"id": "d66c05ad-967f-4f69-a6fb-7d47281b641c",
-			"uniqueId": 14,
+			"uniqueId": 15,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
@@ -52,7 +52,7 @@
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
-			"geometryId": "d3b70945-ad99-4eb5-abe6-e1409aa44e01",
+			"geometryId": "668469a3-4050-42d9-9cf9-f67b2449fa01",
 			"subMeshes": null,
 			"materialId": "965b4240-9156-4704-8e39-cc381d3c7123",
 			"physicsMass": 0,
@@ -76,7 +76,7 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/d3b70945-ad99-4eb5-abe6-e1409aa44e01.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/668469a3-4050-42d9-9cf9-f67b2449fa01.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
 				0.5,
