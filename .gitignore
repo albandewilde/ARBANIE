@@ -1,3 +1,4 @@
 build/*
 declaration/*
 dist/*
+node_modules/*
