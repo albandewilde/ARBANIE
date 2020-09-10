@@ -5,6 +5,49 @@
 	"environmentIntensity": 1,
 	"specularIntensity": 1,
 	"disableBumpMap": false,
+	"albedoTexture": {
+		"tags": null,
+		"url": "files/guillaumes.png",
+		"uOffset": 0,
+		"vOffset": 0,
+		"uScale": 1,
+		"vScale": 1,
+		"uAng": 0,
+		"vAng": 0,
+		"wAng": 0,
+		"uRotationCenter": 0.5,
+		"vRotationCenter": 0.5,
+		"wRotationCenter": 0.5,
+		"isBlocking": true,
+		"uniqueId": 380,
+		"name": "files/guillaumes.png",
+		"metadata": {
+			"editorName": "guillaumes.png",
+			"editorId": "2e577fe7-7bdc-4455-bc4b-efada8e25118"
+		},
+		"hasAlpha": false,
+		"getAlphaFromRGB": false,
+		"level": 1,
+		"coordinatesIndex": 0,
+		"coordinatesMode": 0,
+		"wrapU": 1,
+		"wrapV": 1,
+		"wrapR": 1,
+		"anisotropicFilteringLevel": 4,
+		"isCube": false,
+		"is3D": false,
+		"is2DArray": false,
+		"gammaSpace": true,
+		"invertZ": false,
+		"lodLevelInAlpha": false,
+		"lodGenerationOffset": 0,
+		"lodGenerationScale": 0,
+		"linearSpecularLOD": false,
+		"isRenderTarget": false,
+		"animations": [],
+		"invertY": true,
+		"samplingMode": 3
+	},
 	"ambientTextureStrength": 1,
 	"ambientTextureImpactOnAnalyticalLights": 0,
 	"metallicF0Factor": 0.5,
@@ -14,9 +57,9 @@
 		1
 	],
 	"ambient": [
-		0.1,
-		0.1,
-		0.1
+		1,
+		1,
+		1
 	],
 	"albedo": [
 		1,
@@ -29,9 +72,9 @@
 		0
 	],
 	"reflection": [
-		1,
-		1,
-		1
+		0,
+		0,
+		0
 	],
 	"emissive": [
 		0,

@@ -2,14 +2,14 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "cube",
+			"name": "wall",
 			"id": "d66c05ad-967f-4f69-a6fb-7d47281b641c",
-			"uniqueId": 15,
+			"uniqueId": 11,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
 				0,
-				0.5351396799087524,
+				-10.169008453948164,
 				0
 			],
 			"rotationQuaternion": [
@@ -19,9 +19,9 @@
 				1
 			],
 			"scaling": [
-				1,
-				1,
-				1
+				0.03752943128347397,
+				26.760833740234375,
+				15.551691055297852
 			],
 			"localMatrix": {
 				"0": 1,
@@ -69,7 +69,7 @@
 			"layerMask": 268435455,
 			"alphaIndex": 1.7976931348623157e+308,
 			"hasVertexAlpha": false,
-			"overlayAlpha": 0.5,
+			"overlayAlpha": 0.3,
 			"overlayColor": [
 				1,
 				0,

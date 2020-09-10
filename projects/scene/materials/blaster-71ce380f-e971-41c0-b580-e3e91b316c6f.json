@@ -7,7 +7,7 @@
 	"disableBumpMap": false,
 	"albedoTexture": {
 		"tags": null,
-		"url": "files/blaster_diffuse.jpg",
+		"url": "files/blaster_diffuse_kirby.jpg",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -19,11 +19,11 @@
 		"vRotationCenter": 0.5,
 		"wRotationCenter": 0.5,
 		"isBlocking": true,
-		"uniqueId": 83,
-		"name": "files/blaster_diffuse.jpg",
+		"uniqueId": 55,
+		"name": "files/blaster_diffuse_kirby.jpg",
 		"metadata": {
-			"editorName": "blaster_diffuse.jpg",
-			"editorId": "3298758d-4380-4f12-9d6c-aabefafe1060"
+			"editorName": "blaster_diffuse_kirby.jpg",
+			"editorId": "539c7402-f3a6-4797-859c-0cbd29a9af78"
 		},
 		"hasAlpha": false,
 		"getAlphaFromRGB": false,
@@ -108,7 +108,7 @@
 	],
 	"bumpTexture": {
 		"tags": null,
-		"url": "files/blaster_nmap.jpg",
+		"url": "files/blaster_diffuse_kirby.jpg",
 		"uOffset": 0,
 		"vOffset": 0,
 		"uScale": 1,
@@ -120,11 +120,11 @@
 		"vRotationCenter": 0.5,
 		"wRotationCenter": 0.5,
 		"isBlocking": true,
-		"uniqueId": 84,
-		"name": "files/blaster_nmap.jpg",
+		"uniqueId": 55,
+		"name": "files/blaster_diffuse_kirby.jpg",
 		"metadata": {
-			"editorName": "blaster_nmap.jpg",
-			"editorId": "c7c80a17-2a4a-4d0d-ad7c-2d28f104a338"
+			"editorName": "blaster_diffuse_kirby.jpg",
+			"editorId": "539c7402-f3a6-4797-859c-0cbd29a9af78"
 		},
 		"hasAlpha": false,
 		"getAlphaFromRGB": false,

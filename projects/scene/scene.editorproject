@@ -2,7 +2,10 @@
 	"filesList": [
 		"blaster_diffuse.jpg",
 		"blaster_nmap.jpg",
-		"parking.env"
+		"parking.env",
+		"blaster_diffuse_kirby.jpg",
+		"guillaumes.png",
+		"eating_apple_guy.jpg"
 	],
 	"cameras": [
 		"camera-2e391261-067a-4ec6-8b00-25d7e0738684.json"
@@ -24,17 +27,16 @@
 		},
 		{
 			"bindedMeshes": [
-				"f824df87-ae33-41d9-ba8f-551d2083a2be",
-				"d66c05ad-967f-4f69-a6fb-7d47281b641c"
+				"b87c0751-53e5-4782-88d9-0461e9457fe1"
 			],
-			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
+			"json": "ground-77eb899b-024f-405e-b240-9bb6e5cbe3c3.json",
 			"isMultiMaterial": false
 		},
 		{
 			"bindedMeshes": [
-				"b87c0751-53e5-4782-88d9-0461e9457fe1"
+				"d66c05ad-967f-4f69-a6fb-7d47281b641c"
 			],
-			"json": "ground-77eb899b-024f-405e-b240-9bb6e5cbe3c3.json",
+			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -46,18 +48,20 @@
 		}
 	],
 	"textures": [
+		"blaster_diffuse_kirby.jpg-55.json",
+		"parking.env-82.json",
+		"EnvironmentBRDFTexture0-17.json",
+		"guillaumes.png-380.json",
 		"blaster_diffuse.jpg-83.json",
 		"blaster_nmap.jpg-84.json",
-		"parking.env-82.json",
-		"EnvironmentBRDFTexture0-17.json"
+		"eating_apple_guy.jpg-53.json"
 	],
 	"meshes": [
-		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
-		"wall-f824df87-ae33-41d9-ba8f-551d2083a2be.json",
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
-		"cube-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
-		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json"
+		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json",
+		"wall-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
+		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -256,10 +260,7 @@
 				"blurScale": 2,
 				"useKernelBlur": false,
 				"renderList": [
-					"d66c05ad-967f-4f69-a6fb-7d47281b641c",
-					"f824df87-ae33-41d9-ba8f-551d2083a2be",
-					"2dacc31c-b006-4088-aaaf-50c86a795b6c",
-					"b6f5c00a-61f9-48a2-a448-70f69392c07a"
+					"d66c05ad-967f-4f69-a6fb-7d47281b641c"
 				],
 				"numCascades": 4,
 				"debug": false,
@@ -287,13 +288,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 4.880018683972746,
-			"beta": 1.3003160185451923,
-			"radius": 3.6899219188506334,
+			"alpha": 6.267027928044206,
+			"beta": 1.4128862038471228,
+			"radius": 28.104250125292957,
 			"target": [
-				3.6685266494750977,
-				0.9389764666557312,
-				3.3402628898620605
+				0,
+				0.9868135452270508,
+				0
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -323,9 +324,9 @@
 			],
 			"speed": 2,
 			"position": [
-				4.261791123510428,
-				1.9249026188473413,
-				-0.16566218827160784
+				27.750956630470586,
+				5.406338308455213,
+				-0.4484217501224799
 			],
 			"upVector": [
 				0,
