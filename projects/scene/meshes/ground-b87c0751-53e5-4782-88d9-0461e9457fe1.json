@@ -52,7 +52,7 @@
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
-			"geometryId": "0d38a45c-03a7-4a42-bfc3-977788ff849d",
+			"geometryId": "c24ce9a3-79ab-4706-a2b0-4afdf4437eac",
 			"subMeshes": null,
 			"materialId": "77eb899b-024f-405e-b240-9bb6e5cbe3c3",
 			"physicsMass": 0,
@@ -76,7 +76,7 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/0d38a45c-03a7-4a42-bfc3-977788ff849d.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/c24ce9a3-79ab-4706-a2b0-4afdf4437eac.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
 				0.5,

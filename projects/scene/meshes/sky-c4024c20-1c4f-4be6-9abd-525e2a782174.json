@@ -4,7 +4,7 @@
 		{
 			"name": "sky",
 			"id": "c4024c20-1c4f-4be6-9abd-525e2a782174",
-			"uniqueId": 8,
+			"uniqueId": 11,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
@@ -51,7 +51,7 @@
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
-			"geometryId": "8c80c4bd-4350-4b45-98de-f4007c0ff845",
+			"geometryId": "51678b27-3c8f-4b5f-9266-fa2c24112944",
 			"subMeshes": null,
 			"materialId": "cdc8b068-1ebd-4c87-8cb0-f48a85181271",
 			"metadata": {
@@ -71,7 +71,7 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/8c80c4bd-4350-4b45-98de-f4007c0ff845.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/51678b27-3c8f-4b5f-9266-fa2c24112944.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				2500,
 				2500,
