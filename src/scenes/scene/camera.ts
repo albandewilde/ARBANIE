@@ -58,6 +58,7 @@ export default class PlayerCamera extends FreeCamera {
     private _onPointerEvent(info: PointerInfo): void {
         this._enterPointerLock();
         this._launchBall(info);
+        this._playShootSound();
     }
 
     /**
@@ -100,5 +101,9 @@ export default class PlayerCamera extends FreeCamera {
         // Apply impulse on ball
         const force = this.getDirection(new Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
         ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
+    }
+
+    private _playShootSound(): void {
+        this._gunshot.play();
     }
 }
