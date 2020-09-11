@@ -10,7 +10,6 @@ import { attachScripts, configurePostProcesses } from "../tools";
  */
 export const scriptsMap = {
 	"src/scenes/scene/camera.ts": require("./camera"),
-	"src/scenes/scene/sky.ts": require("./sky"),
 	"src/scenes/scene/sun.ts": require("./sun"),
 }
 

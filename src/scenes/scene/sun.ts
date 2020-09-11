@@ -43,7 +43,7 @@ export default class Sun extends Node {
         test.emissiveColor = new Color3(1, 1, 0);
         
 
-        this.spot = new SpotLight("spot", new Vector3(0, 0, 50), new Vector3(0, -1, 0), 17, 1, this._scene);
+        this.spot = new SpotLight("spot", new Vector3(0, 0, 50), new Vector3(0, -1, 0), 35, 1, this._scene);
         this.spot.diffuse = new Color3(1, 1, 1);
         this.spot.specular = new Color3(1, 0, 0);
         this.spot.intensity = 3;
@@ -60,6 +60,7 @@ export default class Sun extends Node {
 
         this._scene.registerBeforeRender(() =>{
             this.sun.position = this.spot.position;
+            console.log(this.spot.position)
             if (isUp) {
                 this.spot.position.x += 0.2
                 this.spot.position.y += 0.1;

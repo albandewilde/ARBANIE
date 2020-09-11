@@ -24,10 +24,9 @@
 		},
 		{
 			"bindedMeshes": [
-				"f824df87-ae33-41d9-ba8f-551d2083a2be",
-				"d66c05ad-967f-4f69-a6fb-7d47281b641c"
+				"f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c"
 			],
-			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
+			"json": "ball-0b776f6c-9111-499d-8207-1c8242d97719.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -39,25 +38,31 @@
 		},
 		{
 			"bindedMeshes": [
-				"f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c"
+				"f824df87-ae33-41d9-ba8f-551d2083a2be",
+				"d66c05ad-967f-4f69-a6fb-7d47281b641c",
+				"29f0a18c-6e84-4375-be5d-2119fb9d54b9",
+				"49934b71-8809-4ea8-a3a4-6ef69182bed7",
+				"5aa48762-090d-4741-8a78-5f6dec3a3956"
 			],
-			"json": "ball-0b776f6c-9111-499d-8207-1c8242d97719.json",
+			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
 			"isMultiMaterial": false
 		}
 	],
 	"textures": [
-		"blaster_diffuse.jpg-83.json",
 		"blaster_nmap.jpg-84.json",
 		"parking.env-82.json",
+		"blaster_diffuse.jpg-83.json",
 		"EnvironmentBRDFTexture0-17.json"
 	],
 	"meshes": [
-		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
-		"wall-f824df87-ae33-41d9-ba8f-551d2083a2be.json",
+		"cube-29f0a18c-6e84-4375-be5d-2119fb9d54b9.json",
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
-		"cube-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
-		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json"
+		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
+		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json",
+		"wall-49934b71-8809-4ea8-a3a4-6ef69182bed7.json",
+		"wall-5aa48762-090d-4741-8a78-5f6dec3a3956.json",
+		"wall-f824df87-ae33-41d9-ba8f-551d2083a2be.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -256,17 +261,16 @@
 				"blurScale": 2,
 				"useKernelBlur": false,
 				"renderList": [
-					"d66c05ad-967f-4f69-a6fb-7d47281b641c",
-					"f824df87-ae33-41d9-ba8f-551d2083a2be",
 					"2dacc31c-b006-4088-aaaf-50c86a795b6c",
-					"b6f5c00a-61f9-48a2-a448-70f69392c07a"
+					"b6f5c00a-61f9-48a2-a448-70f69392c07a",
+					"f824df87-ae33-41d9-ba8f-551d2083a2be"
 				],
 				"numCascades": 4,
 				"debug": false,
 				"stabilizeCascades": true,
 				"lambda": 1,
-				"cascadeBlendPercentage": 0.2,
-				"depthClamp": true,
+				"cascadeBlendPercentage": 0.26,
+				"depthClamp": false,
 				"autoCalcDepthBounds": false,
 				"shadowMaxZ": 10000,
 				"penumbraDarkness": 1,
@@ -287,8 +291,8 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 4.880018683972746,
-			"beta": 1.3003160185451923,
+			"alpha": 4.595723988106781,
+			"beta": 1.5528521910130595,
 			"radius": 3.6899219188506334,
 			"target": [
 				3.6685266494750977,
@@ -323,9 +327,9 @@
 			],
 			"speed": 2,
 			"position": [
-				4.261791123510428,
-				1.9249026188473413,
-				-0.16566218827160784
+				3.239086954817359,
+				1.0051853733353384,
+				-0.32398624148025323
 			],
 			"upVector": [
 				0,
@@ -334,7 +338,7 @@
 			],
 			"fov": 0.8,
 			"minZ": 1,
-			"maxZ": 10000,
+			"maxZ": 15000,
 			"inertia": 0.9,
 			"mode": 0,
 			"layerMask": 268435455,

@@ -1,4 +1,4 @@
-import { Engine, Scene, SceneLoader } from "@babylonjs/core";
+import { Engine, Scene, SceneLoader, Sound } from "@babylonjs/core";
 import "@babylonjs/materials";
 
 import { runScene } from "./scenes/scene";
@@ -13,12 +13,19 @@ export class Game {
      */
     public scene: Scene;
 
+    private _ambiantMusic: Sound;
+
     /**
      * Constructor.
      */
     public constructor() {
         this.engine = new Engine(document.getElementById("renderCanvas") as HTMLCanvasElement, true);
         this.scene = new Scene(this.engine);
+        
+        this._ambiantMusic = new Sound("Music", "projects/scene/sounds/09_-_Shake_a_Leg.ogg", this.scene, null, {
+            loop: true,
+            autoplay: true
+        });
 
         this._bindEvents();
         this._load();
