@@ -3,7 +3,7 @@
 		{
 			"name": "New Cube",
 			"id": "708a93fb-70fd-434c-baac-ff41d47920d6",
-			"uniqueId": 114,
+			"uniqueId": 9,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
@@ -62,7 +62,7 @@
 			"layerMask": 268435455,
 			"alphaIndex": 1.7976931348623157e+308,
 			"hasVertexAlpha": false,
-			"overlayAlpha": 0.5,
+			"overlayAlpha": 0.3,
 			"overlayColor": [
 				1,
 				0,

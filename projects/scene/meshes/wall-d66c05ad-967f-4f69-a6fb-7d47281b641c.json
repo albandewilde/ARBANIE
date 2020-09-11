@@ -4,12 +4,12 @@
 		{
 			"name": "wall",
 			"id": "d66c05ad-967f-4f69-a6fb-7d47281b641c",
-			"uniqueId": 11,
+			"uniqueId": 10,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
 				0,
-				-10.169008453948164,
+				-5.583121898523936,
 				0
 			],
 			"rotationQuaternion": [
@@ -20,7 +20,7 @@
 			],
 			"scaling": [
 				0.03752943128347397,
-				26.760833740234375,
+				18.207494735717773,
 				15.551691055297852
 			],
 			"localMatrix": {
@@ -61,7 +61,8 @@
 			"physicsImpostor": 2,
 			"metadata": {
 				"isPickable": true,
-				"script": {}
+				"script": {},
+				"isLocked": false
 			},
 			"instances": [],
 			"animations": [],

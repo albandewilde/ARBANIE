@@ -202,7 +202,7 @@
 	"useLogarithmicDepth": false,
 	"id": "965b4240-9156-4704-8e39-cc381d3c7123",
 	"uniqueId": 77,
-	"name": "cube",
+	"name": "wall",
 	"checkReadyOnEveryCall": false,
 	"checkReadyOnlyOnce": false,
 	"state": "",

@@ -2,26 +2,26 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "wall",
-			"id": "5aa48762-090d-4741-8a78-5f6dec3a3956",
-			"uniqueId": 594,
+			"name": "invisible_wall",
+			"id": "cc9995a6-8ee6-41d1-b21c-be0ad9d7a635",
+			"uniqueId": 14,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				5.762900352478027,
-				0.5578353404998779,
-				8.79148006439209
+				-48.055462858147855,
+				14.260235772016356,
+				0.025149732467644736
 			],
 			"rotationQuaternion": [
-				-0.000006388101610355079,
-				-6.621380066462734e-8,
-				-0.0000040618551793158986,
-				1
+				4.809569285984273e-7,
+				0.9999894201195855,
+				0.000044277486328413247,
+				-0.0045998406172411835
 			],
 			"scaling": [
-				1.000000000033006,
-				1.000000000114613,
-				1.0000000000816245
+				0.037529421269116806,
+				26.7608357525244,
+				103.35084760399226
 			],
 			"pivotMatrix": {
 				"0": 1,
@@ -42,22 +42,27 @@
 				"15": 1
 			},
 			"isEnabled": true,
-			"isVisible": true,
+			"isVisible": false,
 			"infiniteDistance": false,
 			"pickable": true,
 			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": false,
+			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
-			"geometryId": "797496c5-d93b-4fc9-be11-d2d80c4edeb3",
+			"geometryId": "668469a3-4050-42d9-9cf9-f67b2449fa01",
 			"subMeshes": null,
 			"materialId": "965b4240-9156-4704-8e39-cc381d3c7123",
+			"physicsMass": 0,
+			"physicsFriction": 0.2,
+			"physicsRestitution": 0,
+			"physicsImpostor": 2,
 			"metadata": {
 				"isPickable": true,
-				"script": {}
+				"script": {},
+				"isLocked": true
 			},
 			"instances": [],
 			"animations": [],
@@ -72,7 +77,7 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/797496c5-d93b-4fc9-be11-d2d80c4edeb3.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/668469a3-4050-42d9-9cf9-f67b2449fa01.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
 				0.5,

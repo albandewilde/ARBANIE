@@ -23,6 +23,7 @@ export default class PlayerCamera extends FreeCamera {
     private _ballForceFactor: number;
 
     private _gunshot: Sound;
+    private _targetHit: Sound;
     public _scene: Scene;
     private _score: number;
     private _balls: Array<InstancedMesh>;
@@ -47,9 +48,9 @@ export default class PlayerCamera extends FreeCamera {
         this._scene = this.getScene();
         this._score = 0;
         this._balls = [];
-        this._gunshot = new Sound("gunshot", "projects/scene/sounds/ooh.mp3", this.getScene());
-
-        this._ui = new Hud(this._scene);        
+        this._gunshot = new Sound( "gunshot", "projects/scene/sounds/ooh.mp3", this.getScene() );
+        this._targetHit = new Sound( "targetHit", "projects/scene/sounds/bruh.mp3", this.getScene() );
+        this._ui = new Hud(this._scene);
     }
 
     /**
@@ -116,6 +117,10 @@ export default class PlayerCamera extends FreeCamera {
         this._gunshot.play();
     }
 
+    private _playTargetHitSound(): void {
+        this._targetHit.play();
+    }
+
     private _checkBallCollisions() {
         const meshes = this._scene.meshes;
         meshes.forEach( m => {
@@ -123,6 +128,7 @@ export default class PlayerCamera extends FreeCamera {
                 if( m.name === 'New Cube' ) {
                     if( b.intersectsMesh( m, true ) ) {
                         this._score += 1;
+                        this._playTargetHitSound();
                         this._balls.splice( this._balls.findIndex( ball => ball === b), 1 );
                     }
                 }
