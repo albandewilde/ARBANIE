@@ -1,4 +1,4 @@
-import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3 } from "@babylonjs/core";
+import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3, CubeTexture, Texture } from "@babylonjs/core";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -45,8 +45,9 @@ export default class Sun extends Node {
 
         this.spot = new SpotLight("spot", new Vector3(0, 0, 50), new Vector3(0, -1, 0), 17, 1, this._scene);
         this.spot.diffuse = new Color3(1, 1, 1);
-        this.spot.specular = new Color3(0, 0, 0);
-        this.spot.intensity = 0.3;
+        this.spot.specular = new Color3(1, 0, 0);
+        this.spot.intensity = 3;
+
     }
 
     /**
@@ -58,13 +59,11 @@ export default class Sun extends Node {
             let isUp: boolean = true
 
         this._scene.registerBeforeRender(() =>{
-            console.log(this.spot.position)
-            console.log(isUp)
             this.sun.position = this.spot.position;
             if (isUp) {
                 this.spot.position.x += 0.2
                 this.spot.position.y += 0.1;
-                if (this.spot.position.y > 45){
+                if (this.spot.position.y > 70){
                     isUp = false
                 }
             }
