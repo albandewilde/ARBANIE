@@ -21,16 +21,16 @@
 		},
 		{
 			"bindedMeshes": [
-				"b87c0751-53e5-4782-88d9-0461e9457fe1"
+				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
 			],
-			"json": "ground-77eb899b-024f-405e-b240-9bb6e5cbe3c3.json",
+			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
 			"isMultiMaterial": false
 		},
 		{
 			"bindedMeshes": [
-				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
+				"b87c0751-53e5-4782-88d9-0461e9457fe1"
 			],
-			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
+			"json": "ground-77eb899b-024f-405e-b240-9bb6e5cbe3c3.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -64,21 +64,32 @@
 		},
 		{
 			"bindedMeshes": [
-				"d33e0e0f-60bf-46db-b797-a11c1817b674"
+				"d33e0e0f-60bf-46db-b797-a11c1817b674",
+				"1eea5003-7ba9-4066-a772-6860469f73fb",
+				"bb2fc4bd-c23b-4aa6-98f3-49fb23259016",
+				"0bfa0c2e-15af-4de6-b93b-c9ad1256947f",
+				"348ca1a8-7b5e-417f-9ed5-4d1aef017e89",
+				"2ea7aa6e-9f67-4025-a011-b81f9f9c07dc",
+				"f838be14-c5ff-4947-b870-bd7a9bd9b927",
+				"da6d5e98-411c-4075-b827-a7e0f68ba0b7",
+				"e32a2d4b-4b14-4555-ba2b-a40d69380eef",
+				"c7d61f31-adc9-4809-8024-78940e009462",
+				"5943b9b9-e018-49aa-b10c-13d865abf61b",
+				"2ed3adc0-2a37-4217-9ad0-18b47a34dfe8"
 			],
 			"json": "spi-8cb97142-86c5-419a-a184-d919edf595ec.json",
 			"isMultiMaterial": false
 		}
 	],
 	"textures": [
-		"parking.env-82.json",
-		"blaster_diffuse.jpg-83.json",
-		"eating_apple_guy.jpg-53.json",
-		"blaster_nmap.jpg-84.json",
-		"EnvironmentBRDFTexture0-17.json",
-		"guillaumes.png-380.json",
 		"blaster_diffuse_kirby.jpg-55.json",
-		"spi.png-2552.json"
+		"blaster_diffuse.jpg-83.json",
+		"blaster_nmap.jpg-84.json",
+		"eating_apple_guy.jpg-53.json",
+		"spi.png-2552.json",
+		"parking.env-82.json",
+		"EnvironmentBRDFTexture0-17.json",
+		"guillaumes.png-380.json"
 	],
 	"meshes": [
 		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
@@ -86,9 +97,9 @@
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
 		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"wall-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
+		"wall-6fd15458-0017-4299-a610-efcfe558d8e0.json",
 		"wall-3c9fb0fc-d84c-4c5c-9e1a-5dedbc510ae8.json",
 		"wall-3bb300db-25a1-4285-9b22-b957256088f6.json",
-		"wall-6fd15458-0017-4299-a610-efcfe558d8e0.json",
 		"wall-07c1155b-c3cc-42c9-b500-10551951d4ac.json",
 		"wall-d46b5ca2-6186-460b-ac86-ca43ce9f0bf8.json",
 		"wall-c396b221-860e-408e-a7c7-1f1e2aff1ba6.json",
@@ -101,7 +112,17 @@
 		"wall-38bca483-95be-4eb9-be84-64ee7b223d30.json",
 		"wall-12f4dda5-b1e5-4a01-9443-8d0d77361e03.json",
 		"wall-73906361-3a4f-4390-bc71-c4209f13b27e.json",
-		"target-d33e0e0f-60bf-46db-b797-a11c1817b674.json"
+		"target-d33e0e0f-60bf-46db-b797-a11c1817b674.json",
+		"target-bb2fc4bd-c23b-4aa6-98f3-49fb23259016.json",
+		"target-0bfa0c2e-15af-4de6-b93b-c9ad1256947f.json",
+		"target-348ca1a8-7b5e-417f-9ed5-4d1aef017e89.json",
+		"target-2ea7aa6e-9f67-4025-a011-b81f9f9c07dc.json",
+		"target-f838be14-c5ff-4947-b870-bd7a9bd9b927.json",
+		"target-da6d5e98-411c-4075-b827-a7e0f68ba0b7.json",
+		"target-e32a2d4b-4b14-4555-ba2b-a40d69380eef.json",
+		"target-5943b9b9-e018-49aa-b10c-13d865abf61b.json",
+		"target-c7d61f31-adc9-4809-8024-78940e009462.json",
+		"target-2ed3adc0-2a37-4217-9ad0-18b47a34dfe8.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -328,13 +349,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 2.9527952419196777,
-			"beta": 1.211284810489784,
-			"radius": 2.9999999999999996,
+			"alpha": 0.47445460201667383,
+			"beta": 0.803779816320777,
+			"radius": 10.781385593303595,
 			"target": [
-				1.0679022073745728,
-				0.5272955298423767,
-				0
+				14.607178688049316,
+				0.48581188917160034,
+				20.60430145263672
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -364,9 +385,9 @@
 			],
 			"speed": 2,
 			"position": [
-				-1.6904041518044925,
-				1.5827465926192308,
-				0.5270380280354903
+				21.51218569896717,
+				7.96798853004958,
+				24.150593347753297
 			],
 			"upVector": [
 				0,
