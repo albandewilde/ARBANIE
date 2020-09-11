@@ -24,16 +24,14 @@
 	"blurScale": 2,
 	"useKernelBlur": false,
 	"renderList": [
-		"2dacc31c-b006-4088-aaaf-50c86a795b6c",
-		"b6f5c00a-61f9-48a2-a448-70f69392c07a",
-		"f824df87-ae33-41d9-ba8f-551d2083a2be"
+		"d66c05ad-967f-4f69-a6fb-7d47281b641c"
 	],
 	"numCascades": 4,
 	"debug": false,
 	"stabilizeCascades": true,
 	"lambda": 1,
-	"cascadeBlendPercentage": 0.26,
-	"depthClamp": false,
+	"cascadeBlendPercentage": 0.2,
+	"depthClamp": true,
 	"autoCalcDepthBounds": false,
 	"shadowMaxZ": 10000,
 	"penumbraDarkness": 1,

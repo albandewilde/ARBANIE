@@ -4,23 +4,23 @@
 		{
 			"name": "sky",
 			"id": "c4024c20-1c4f-4be6-9abd-525e2a782174",
-			"uniqueId": 11,
+			"uniqueId": 12,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				1.315194010734558,
-				1.036397933959961,
-				2.6747875213623047
+				0,
+				0,
+				0
 			],
 			"rotation": [
-				3.3150627124008847e-8,
-				2.6078402710806235e-9,
-				6.33743462034521e-9
+				0,
+				0,
+				0
 			],
 			"scaling": [
 				1,
-				1.0000000000000004,
-				1.0000000000000004
+				1,
+				1
 			],
 			"localMatrix": {
 				"0": 1,
@@ -50,7 +50,6 @@
 			"checkCollisions": false,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
-			"parentId": "2e391261-067a-4ec6-8b00-25d7e0738684",
 			"isUnIndexed": false,
 			"geometryId": "51678b27-3c8f-4b5f-9266-fa2c24112944",
 			"subMeshes": null,

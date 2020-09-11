@@ -2,15 +2,15 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "ground",
-			"id": "b87c0751-53e5-4782-88d9-0461e9457fe1",
-			"uniqueId": 8,
+			"name": "wall",
+			"id": "6fd15458-0017-4299-a610-efcfe558d8e0",
+			"uniqueId": 259,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				0,
-				-0.17133099096016569,
-				0
+				4.354580371005259,
+				-13.014462725619156,
+				15.910056870393738
 			],
 			"rotationQuaternion": [
 				0,
@@ -19,11 +19,11 @@
 				1
 			],
 			"scaling": [
-				100,
-				0.10000000149011612,
-				100
+				0.018789805471897125,
+				26.760833740234375,
+				15.551691055297852
 			],
-			"localMatrix": {
+			"pivotMatrix": {
 				"0": 1,
 				"1": 0,
 				"2": 0,
@@ -45,16 +45,16 @@
 			"isVisible": true,
 			"infiniteDistance": false,
 			"pickable": true,
-			"receiveShadows": true,
+			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
 			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
-			"geometryId": "c24ce9a3-79ab-4706-a2b0-4afdf4437eac",
+			"geometryId": "afbdda07-c3b6-4f01-9121-9bbbeab0bce1",
 			"subMeshes": null,
-			"materialId": "77eb899b-024f-405e-b240-9bb6e5cbe3c3",
+			"materialId": "965b4240-9156-4704-8e39-cc381d3c7123",
 			"physicsMass": 0,
 			"physicsFriction": 0.2,
 			"physicsRestitution": 0,
@@ -76,7 +76,7 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/c24ce9a3-79ab-4706-a2b0-4afdf4437eac.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/afbdda07-c3b6-4f01-9121-9bbbeab0bce1.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
 				0.5,
