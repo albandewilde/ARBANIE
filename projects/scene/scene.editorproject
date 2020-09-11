@@ -51,17 +51,18 @@
 		"blaster_diffuse_kirby.jpg-55.json",
 		"parking.env-82.json",
 		"EnvironmentBRDFTexture0-17.json",
+		"eating_apple_guy.jpg-53.json",
 		"guillaumes.png-380.json",
 		"blaster_diffuse.jpg-83.json",
-		"blaster_nmap.jpg-84.json",
-		"eating_apple_guy.jpg-53.json"
+		"blaster_nmap.jpg-84.json"
 	],
 	"meshes": [
-		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
+		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json",
 		"wall-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
-		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json"
+		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
+		"New Cube-708a93fb-70fd-434c-baac-ff41d47920d6.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -288,12 +289,12 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 6.267027928044206,
-			"beta": 1.4128862038471228,
-			"radius": 28.104250125292957,
+			"alpha": 1.0615928467251063,
+			"beta": 1.1987919829066995,
+			"radius": 5.589605434184733,
 			"target": [
 				0,
-				0.9868135452270508,
+				0,
 				0
 			],
 			"inertialAlphaOffset": 0,
@@ -324,9 +325,9 @@
 			],
 			"speed": 2,
 			"position": [
-				27.750956630470586,
-				5.406338308455213,
-				-0.4484217501224799
+				2.538455009879038,
+				2.031728837931081,
+				4.5466485461058825
 			],
 			"upVector": [
 				0,
