@@ -36,7 +36,6 @@ export default class Sun extends Node {
      */
     public onInitialize(): void {
         this._scene = this.getScene();
-        console.log(this._scene)
         this.sun = Mesh.CreateSphere("sun", 10, 4, this._scene);
         this.sun.material = new StandardMaterial("sun", this._scene);
         let test = (this.sun.material as StandardMaterial)
@@ -55,12 +54,10 @@ export default class Sun extends Node {
      */
     public onStart(): void {
         
-        console.log(this.sun.position)
             let isUp: boolean = true
 
         this._scene.registerBeforeRender(() =>{
             this.sun.position = this.spot.position;
-            console.log(this.spot.position)
             if (isUp) {
                 this.spot.position.x += 0.2
                 this.spot.position.y += 0.1;
