@@ -1,0 +1,404 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "wall",
+			"id": "3c9fb0fc-d84c-4c5c-9e1a-5dedbc510ae8",
+			"uniqueId": 315,
+			"type": "Mesh",
+			"tags": "modified",
+			"position": [
+				0,
+				-12.920890107211381,
+				15.72286585197516
+			],
+			"rotationQuaternion": [
+				0,
+				0,
+				0,
+				1
+			],
+			"scaling": [
+				0.018789805471897125,
+				26.760833740234375,
+				15.551691055297852
+			],
+			"pivotMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": true,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": null,
+			"isUnIndexed": false,
+			"geometryId": "d611a037-151a-4924-9b12-2e4de7aa8075",
+			"subMeshes": null,
+			"materialId": "965b4240-9156-4704-8e39-cc381d3c7123",
+			"physicsMass": 0,
+			"physicsFriction": 0.2,
+			"physicsRestitution": 0,
+			"physicsImpostor": 2,
+			"metadata": {
+				"isPickable": true,
+				"script": {}
+			},
+			"instances": [
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "1e98d3a4-0b1c-4dff-871b-04707261ea1f",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-0.10560578091068429,
+						-12.884963287660865,
+						-17.63536814839997
+					],
+					"scaling": [
+						0.018789802957558197,
+						26.760833740234375,
+						15.551690541229465
+					],
+					"rotationQuaternion": [
+						0,
+						0.32660024435740986,
+						0,
+						0.9451625642015348
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "a421eb6e-517b-475a-beaa-4091005697fd",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-4.96206847156746,
+						-12.885473503430124,
+						-13.822492337667926
+					],
+					"scaling": [
+						0.018789802957558197,
+						26.760833740234375,
+						15.551690541229465
+					],
+					"rotationQuaternion": [
+						0,
+						0.32660024435740986,
+						0,
+						0.9451625642015348
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "aeed7cc8-0dea-4397-bf9e-c89949ca86a4",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-10.906764930525025,
+						-12.885944618551644,
+						-28.3753582374109
+					],
+					"scaling": [
+						0.01878980380959665,
+						26.760833740234375,
+						15.551690314372836
+					],
+					"rotationQuaternion": [
+						0,
+						0.44040515345862,
+						0,
+						0.897799140705973
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "f2de74b9-6986-4dfd-ab5e-53cdc9c10027",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-17.025483141311692,
+						-12.886850609169954,
+						-21.507957392363572
+					],
+					"scaling": [
+						0.018789803238941534,
+						26.760833740234375,
+						15.55168988156908
+					],
+					"rotationQuaternion": [
+						0,
+						0.6244806417720342,
+						0,
+						0.7810402874812739
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "735b2694-5aa7-470f-bab9-897521a5a5df",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-30.0706790526232,
+						-12.887528671622185,
+						-18.395848346527785
+					],
+					"scaling": [
+						0.0187898063237285,
+						26.760833740234375,
+						15.551690066010423
+					],
+					"rotationQuaternion": [
+						0,
+						0.9022118112785419,
+						0,
+						0.43129323623234794
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "b6500d41-046d-4421-a9ed-446f698877eb",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-35.48806723557302,
+						-12.88827539862654,
+						-20.3344315644585
+					],
+					"scaling": [
+						0.01878980728839604,
+						26.760833740234375,
+						15.551690612087619
+					],
+					"rotationQuaternion": [
+						0,
+						0.9986968042532417,
+						0,
+						0.051036312148087966
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "e52a72d4-5d26-491d-87ad-ea67011a2d72",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-31.17514461185571,
+						-12.888832344438217,
+						-33.92542568547322
+					],
+					"scaling": [
+						0.018789805088145473,
+						26.760833740234375,
+						15.55169097851619
+					],
+					"rotationQuaternion": [
+						0,
+						0.9674477438158554,
+						0,
+						0.25307087138000567
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "b628ba12-817f-41fc-b5b7-6979d107f973",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-21.432455859759415,
+						-12.889421715177287,
+						-36.31473735771722
+					],
+					"scaling": [
+						0.018789808840479344,
+						26.760833740234375,
+						15.551685898411233
+					],
+					"rotationQuaternion": [
+						0,
+						0.8949506767496941,
+						0,
+						-0.44616508781276515
+					],
+					"physicsMass": 0,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 0,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				}
+			],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/d611a037-151a-4924-9b12-2e4de7aa8075.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				0.5,
+				0.5,
+				0.5
+			],
+			"boundingBoxMinimum": [
+				-0.5,
+				-0.5,
+				-0.5
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 72,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 72,
+					"stride": 3,
+					"offset": 288,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 48,
+					"stride": 2,
+					"offset": 576,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 36,
+					"stride": 1,
+					"offset": 768,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 912,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}
