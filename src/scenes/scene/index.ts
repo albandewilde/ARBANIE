@@ -11,6 +11,7 @@ import { attachScripts, configurePostProcesses } from "../tools";
 export const scriptsMap = {
 	"src/scenes/scene/camera.ts": require("./camera"),
 	"src/scenes/scene/sun.ts": require("./sun"),
+	"src/scenes/scene/fallingElement.ts": require("./fallingElement"),
 }
 
 /**
@@ -21,7 +22,6 @@ export const scriptsMap = {
 export async function runScene(scene: Scene, rootUrl?: string): Promise<void> {
     // Attach scripts to objects in scene.
     attachScripts(scriptsMap, scene);
-
     // Configure post-processes
     configurePostProcesses(scene, rootUrl);
 }

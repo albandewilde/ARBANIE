@@ -1,4 +1,4 @@
-import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3, CubeTexture, Texture } from "@babylonjs/core";
+import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3, CubeTexture, Texture, PhysicsImpostor } from "@babylonjs/core";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -18,64 +18,56 @@ import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3, CubeTe
  * The function "onInitialize" is called immediately after the constructor is called.
  * The functions "onStart" and "onUpdate" are called automatically.
  */
-export default class Sun extends Node {
+export default class FallingElement extends Node {
     /**
      * Override constructor.
      * @warn do not fill.
      */
-    private sun: Mesh;
-    private spot: SpotLight;
+
 
     // @ts-ignore ignoring the super call as we don't want to re-init
-    private constructor(name: string, scene: Scene) {}
-    
+    public constructor(name: string, scene: Scene) {}
+    private scene: Scene
     
     /**
      * Called on the node is being initialized.
      * This function is called immediatly after the constructor has been called.
      */
     public onInitialize(): void {
-        this._scene = this.getScene();
-        this.sun = Mesh.CreateSphere("sun", 10, 4, this._scene);
-        this.sun.material = new StandardMaterial("sun", this._scene);
-        let test = (this.sun.material as StandardMaterial)
-        test.emissiveColor = new Color3(1, 1, 0);
-        
-
-        this.spot = new SpotLight("spot", new Vector3(0, 0, 50), new Vector3(0, -1, 0), 35, 1, this._scene);
-        this.spot.diffuse = new Color3(1, 1, 1);
-        this.spot.specular = new Color3(1, 0, 0);
-        this.spot.intensity = 3;
-
+        console.log('initialize')
+        this.scene = new Scene(this.getEngine())
     }
 
     /**
      * Called on the scene starts.
      */
     public onStart(): void {
+        console.log('coucou')
+        var y = 0;
+        for (var index = 0; index < 100; index++) {
+            var sphere = Mesh.CreateSphere("Sphere0", 16, 3, this.scene);
+    
+            sphere.position = new Vector3(Math.random() * 20 - 10, y, Math.random() * 10 - 5);
         
-            let isUp: boolean = true
-
-        this._scene.registerBeforeRender(() =>{
-            this.sun.position = this.spot.position;
-            if (isUp) {
-                this.spot.position.x += 0.2
-                this.spot.position.y += 0.1;
-                if (this.spot.position.y > 70){
-                    isUp = false
-                }
-            }
-            else {
-                this.spot.position.y -= 0.1
-                this.spot.position.x += 0.20
-                if (this.spot.position.y < 0) {
-                    isUp = true
-                    this.spot.position.x = 0;
-                    this.spot.position.y = 0;                   
-                }            
-            }
-        });
-
+            sphere.physicsImpostor = new PhysicsImpostor(sphere, PhysicsImpostor.SphereImpostor, { mass: 1 }, this.scene);
+     
+            y += 2;
+        }
+    
+        // Link
+        var spheres = [];
+        for (index = 0; index < 10; index++) {
+            sphere = Mesh.CreateSphere("Sphere0", 16, 1, this.scene);
+            spheres.push(sphere);
+            sphere.position = new Vector3(Math.random() * 20 - 10, y, Math.random() * 10 - 5);
+    
+    
+            sphere.physicsImpostor = new PhysicsImpostor(sphere, PhysicsImpostor.SphereImpostor, { mass: 1 }, this.scene);
+        }
+    
+        for (index = 0; index < 9; index++) {
+            spheres[index].setPhysicsLinkWith(spheres[index + 1], new Vector3(0, 0.5, 0), new Vector3(0, -0.5, 0));
+        }
     }
 
     /**
