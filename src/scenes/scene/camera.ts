@@ -1,7 +1,7 @@
-import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Sound, Scene } from "@babylonjs/core";
+import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Sound, Scene, InstancedMesh } from "@babylonjs/core";
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../tools";
-import FallingElement from "./fallingElement";
+import { Hud } from "./hud";
 
 export default class PlayerCamera extends FreeCamera {
     @fromChildren("ball")
@@ -23,9 +23,11 @@ export default class PlayerCamera extends FreeCamera {
     private _ballForceFactor: number;
 
     private _gunshot: Sound;
+    private _targetHit: Sound;
     public _scene: Scene;
     private _score: number;
-    private _fallingElem: FallingElement
+    private _balls: Array<InstancedMesh>;
+    private _ui: Hud;
 
     /**
      * Override constructor.
@@ -45,9 +47,11 @@ export default class PlayerCamera extends FreeCamera {
         this.keysLeft = [this._strafeLeftKey];
         this.keysRight = [this._strafeRightKey];
         this._scene = this.getScene();
+        this._balls = [];
         this._score = 0;
         this._gunshot = new Sound("gunshot", "projects/scene/sounds/ooh.mp3", this.getScene());
-        
+        this._targetHit = new Sound("targetHit", "projects/scene/sounds/bruh.mp3", this.getScene());
+        this._ui = new Hud(this._scene);
     }
 
     /**
@@ -55,6 +59,8 @@ export default class PlayerCamera extends FreeCamera {
      */
     public onUpdate(): void {
         // Nothing to do now...
+        this._checkBallCollisions();
+        this._ui.updateHud( this._score );
     }
 
     /**
@@ -105,18 +111,29 @@ export default class PlayerCamera extends FreeCamera {
         const force = this.getDirection(new Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
         ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
 
-        const meshes = this._scene.getActiveMeshes();
-        meshes.forEach( m => {
-            if( m.name === 'wall' ) {
-                if( ballInstance.intersectsMesh(m, true) ) {
-                    this._score += 1;
-                    console.log(this._score)
-                }
-            }
-        } );
+        this._balls.push( ballInstance );
     }
 
     private _playShootSound(): void {
         this._gunshot.play();
+    }
+
+    private _playTargetHitSound(): void {
+        this._targetHit.play();
+    }
+
+    private _checkBallCollisions() {
+        const meshes = this._scene.meshes;
+        meshes.forEach( m => {
+            this._balls.forEach( b => {
+                if( m.name === 'target' ) {
+                    if( b.intersectsMesh( m, true ) ) {
+                        this._score += 1;
+                        this._playTargetHitSound();
+                        this._balls.splice( this._balls.findIndex( ball => ball === b), 1 );
+                    }
+                }
+            } );
+        } );
     }
 }

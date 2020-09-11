@@ -24,7 +24,6 @@ export default class FallingElement {
 
     public constructor(scene: Scene) {
         this.scene = scene;
-        console.log(this.scene);    
     }
     
     private randomNumber(): number {
@@ -41,7 +40,6 @@ export default class FallingElement {
     }
 
     private newBallInstance(): void {
-        console.log(this.scene)
         var y = 100;
         var randomZ = Math.floor(Math.random() * Math.floor(2));
         var zMultplier = 0;
@@ -57,8 +55,6 @@ export default class FallingElement {
         this.sphereArray.push(mySphere)
 
         var ground = this.scene.getMeshByName('ground');
-        console.log(ground)
-        console.log(this.sphereArray)
         this.sphereArray.forEach(element => {
             if (element.intersectsMesh(ground, false)) {
                 element.dispose()
