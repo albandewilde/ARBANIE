@@ -2,6 +2,7 @@ import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vect
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../tools";
 import { Hud } from "./hud";
+import FallingElement from "./fallingElement";
 
 export default class PlayerCamera extends FreeCamera {
     @fromChildren("ball")
@@ -28,6 +29,8 @@ export default class PlayerCamera extends FreeCamera {
     private _score: number;
     private _balls: Array<InstancedMesh>;
     private _ui: Hud;
+    private _fallingElem: FallingElement
+
     /**
      * Override constructor.
      * @warn do not fill.
@@ -51,6 +54,8 @@ export default class PlayerCamera extends FreeCamera {
         this._gunshot = new Sound( "gunshot", "projects/scene/sounds/ooh.mp3", this.getScene() );
         this._targetHit = new Sound( "targetHit", "projects/scene/sounds/bruh.mp3", this.getScene() );
         this._ui = new Hud(this._scene);
+        this._gunshot = new Sound("gunshot", "projects/scene/sounds/ooh.mp3", this.getScene());
+        
     }
 
     /**

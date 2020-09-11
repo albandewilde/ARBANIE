@@ -2,6 +2,7 @@ import { Engine, Scene, SceneLoader, Sound } from "@babylonjs/core";
 import "@babylonjs/materials";
 
 import { runScene } from "./scenes/scene";
+import FallingElement from "./scenes/scene/fallingElement";
 
 export class Game {
     /**
@@ -14,6 +15,7 @@ export class Game {
     public scene: Scene;
 
     private _ambiantMusic: Sound;
+    private _fallingElem: FallingElement;
 
     /**
      * Constructor.
@@ -26,6 +28,9 @@ export class Game {
             loop: true,
             autoplay: true
         });
+
+        this._fallingElem = new FallingElement(this.scene);
+        this._fallingElem.createBall();
 
         this._bindEvents();
         this._load();
