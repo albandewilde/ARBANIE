@@ -1,6 +1,7 @@
 import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Sound, Scene } from "@babylonjs/core";
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../tools";
+import FallingElement from "./fallingElement";
 
 export default class PlayerCamera extends FreeCamera {
     @fromChildren("ball")
@@ -24,6 +25,7 @@ export default class PlayerCamera extends FreeCamera {
     private _gunshot: Sound;
     public _scene: Scene;
     private _score: number;
+    private _fallingElem: FallingElement
 
     /**
      * Override constructor.
@@ -45,6 +47,7 @@ export default class PlayerCamera extends FreeCamera {
         this._scene = this.getScene();
         this._score = 0;
         this._gunshot = new Sound("gunshot", "projects/scene/sounds/ooh.mp3", this.getScene());
+        
     }
 
     /**
