@@ -5,7 +5,8 @@
 		"parking.env",
 		"blaster_diffuse_kirby.jpg",
 		"guillaumes.png",
-		"eating_apple_guy.jpg"
+		"eating_apple_guy.jpg",
+		"spi.png"
 	],
 	"cameras": [
 		"camera-2e391261-067a-4ec6-8b00-25d7e0738684.json"
@@ -20,6 +21,13 @@
 		},
 		{
 			"bindedMeshes": [
+				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
+			],
+			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [
 				"b87c0751-53e5-4782-88d9-0461e9457fe1"
 			],
 			"json": "ground-77eb899b-024f-405e-b240-9bb6e5cbe3c3.json",
@@ -28,12 +36,23 @@
 		{
 			"bindedMeshes": [
 				"d66c05ad-967f-4f69-a6fb-7d47281b641c",
-				"cb61fed3-b3ba-453e-93bd-0b52acb7ff08",
-				"cc9995a6-8ee6-41d1-b21c-be0ad9d7a635",
-				"96bc408f-49f1-49d7-869f-4203bff5013a",
-				"f57f29f0-cafc-488a-8fb1-31d43f7834dc"
+				"6fd15458-0017-4299-a610-efcfe558d8e0",
+				"3c9fb0fc-d84c-4c5c-9e1a-5dedbc510ae8",
+				"3bb300db-25a1-4285-9b22-b957256088f6",
+				"07c1155b-c3cc-42c9-b500-10551951d4ac",
+				"d46b5ca2-6186-460b-ac86-ca43ce9f0bf8",
+				"c396b221-860e-408e-a7c7-1f1e2aff1ba6",
+				"1f6c958e-f1e0-462f-8efd-f4ca6ae4e42c",
+				"51ddbd6f-3990-4f10-95e8-75bbefe41e2c",
+				"751bb190-0d0b-4f89-96ee-61dd754f3827",
+				"c92ab90c-f460-4f50-9687-9d204e8b2b58",
+				"6dd78310-6b55-4a29-8b46-6be2b6ea0793",
+				"a9a02142-df20-4e2b-b18d-07d27470ac60",
+				"38bca483-95be-4eb9-be84-64ee7b223d30",
+				"12f4dda5-b1e5-4a01-9443-8d0d77361e03",
+				"73906361-3a4f-4390-bc71-c4209f13b27e"
 			],
-			"json": "wall-965b4240-9156-4704-8e39-cc381d3c7123.json",
+			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -45,32 +64,65 @@
 		},
 		{
 			"bindedMeshes": [
-				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
+				"d33e0e0f-60bf-46db-b797-a11c1817b674",
+				"1eea5003-7ba9-4066-a772-6860469f73fb",
+				"bb2fc4bd-c23b-4aa6-98f3-49fb23259016",
+				"0bfa0c2e-15af-4de6-b93b-c9ad1256947f",
+				"348ca1a8-7b5e-417f-9ed5-4d1aef017e89",
+				"2ea7aa6e-9f67-4025-a011-b81f9f9c07dc",
+				"f838be14-c5ff-4947-b870-bd7a9bd9b927",
+				"da6d5e98-411c-4075-b827-a7e0f68ba0b7",
+				"e32a2d4b-4b14-4555-ba2b-a40d69380eef",
+				"c7d61f31-adc9-4809-8024-78940e009462",
+				"5943b9b9-e018-49aa-b10c-13d865abf61b",
+				"2ed3adc0-2a37-4217-9ad0-18b47a34dfe8"
 			],
-			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
+			"json": "spi-8cb97142-86c5-419a-a184-d919edf595ec.json",
 			"isMultiMaterial": false
 		}
 	],
 	"textures": [
-		"guillaumes.png-380.json",
-		"parking.env-82.json",
 		"blaster_diffuse_kirby.jpg-55.json",
-		"eating_apple_guy.jpg-53.json",
 		"blaster_diffuse.jpg-83.json",
 		"blaster_nmap.jpg-84.json",
-		"EnvironmentBRDFTexture0-17.json"
+		"eating_apple_guy.jpg-53.json",
+		"spi.png-2552.json",
+		"parking.env-82.json",
+		"EnvironmentBRDFTexture0-17.json",
+		"guillaumes.png-380.json"
 	],
 	"meshes": [
-		"New Cube-708a93fb-70fd-434c-baac-ff41d47920d6.json",
-		"wall-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
-		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
 		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
-		"invisible_wall-cc9995a6-8ee6-41d1-b21c-be0ad9d7a635.json",
-		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json",
-		"invisible_wall-cb61fed3-b3ba-453e-93bd-0b52acb7ff08.json",
-		"invisible_wall-f57f29f0-cafc-488a-8fb1-31d43f7834dc.json",
-		"invisible_wall-96bc408f-49f1-49d7-869f-4203bff5013a.json"
+		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
+		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
+		"wall-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
+		"wall-6fd15458-0017-4299-a610-efcfe558d8e0.json",
+		"wall-3c9fb0fc-d84c-4c5c-9e1a-5dedbc510ae8.json",
+		"wall-3bb300db-25a1-4285-9b22-b957256088f6.json",
+		"wall-07c1155b-c3cc-42c9-b500-10551951d4ac.json",
+		"wall-d46b5ca2-6186-460b-ac86-ca43ce9f0bf8.json",
+		"wall-c396b221-860e-408e-a7c7-1f1e2aff1ba6.json",
+		"wall-1f6c958e-f1e0-462f-8efd-f4ca6ae4e42c.json",
+		"wall-51ddbd6f-3990-4f10-95e8-75bbefe41e2c.json",
+		"wall-751bb190-0d0b-4f89-96ee-61dd754f3827.json",
+		"wall-c92ab90c-f460-4f50-9687-9d204e8b2b58.json",
+		"wall-6dd78310-6b55-4a29-8b46-6be2b6ea0793.json",
+		"wall-a9a02142-df20-4e2b-b18d-07d27470ac60.json",
+		"wall-38bca483-95be-4eb9-be84-64ee7b223d30.json",
+		"wall-12f4dda5-b1e5-4a01-9443-8d0d77361e03.json",
+		"wall-73906361-3a4f-4390-bc71-c4209f13b27e.json",
+		"target-d33e0e0f-60bf-46db-b797-a11c1817b674.json",
+		"target-bb2fc4bd-c23b-4aa6-98f3-49fb23259016.json",
+		"target-0bfa0c2e-15af-4de6-b93b-c9ad1256947f.json",
+		"target-348ca1a8-7b5e-417f-9ed5-4d1aef017e89.json",
+		"target-2ea7aa6e-9f67-4025-a011-b81f9f9c07dc.json",
+		"target-f838be14-c5ff-4947-b870-bd7a9bd9b927.json",
+		"target-da6d5e98-411c-4075-b827-a7e0f68ba0b7.json",
+		"target-e32a2d4b-4b14-4555-ba2b-a40d69380eef.json",
+		"target-5943b9b9-e018-49aa-b10c-13d865abf61b.json",
+		"target-c7d61f31-adc9-4809-8024-78940e009462.json",
+		"target-2ed3adc0-2a37-4217-9ad0-18b47a34dfe8.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -297,13 +349,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": -0.2503401155204046,
-			"beta": 1.3655724487378986,
-			"radius": 65.3740276906816,
+			"alpha": 0.47445460201667383,
+			"beta": 0.803779816320777,
+			"radius": 10.781385593303595,
 			"target": [
-				-6.067876985908582,
-				5.930051747949233,
-				-0.7993531690024539
+				14.607178688049316,
+				0.48581188917160034,
+				20.60430145263672
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -333,9 +385,9 @@
 			],
 			"speed": 2,
 			"position": [
-				55.939240094880674,
-				19.25238591368921,
-				-16.65483613886668
+				21.51218569896717,
+				7.96798853004958,
+				24.150593347753297
 			],
 			"upVector": [
 				0,
@@ -344,7 +396,7 @@
 			],
 			"fov": 0.8,
 			"minZ": 1,
-			"maxZ": 15000,
+			"maxZ": 10000,
 			"inertia": 0.9,
 			"mode": 0,
 			"layerMask": 268435455,
@@ -399,7 +451,7 @@
 					"pinchPrecision": 12,
 					"pinchDeltaPercentage": 0,
 					"useNaturalPinchZoom": false,
-					"panningSensibility": 200,
+					"panningSensibility": 1000,
 					"multiTouchPanning": true,
 					"multiTouchPanAndZoom": true
 				}

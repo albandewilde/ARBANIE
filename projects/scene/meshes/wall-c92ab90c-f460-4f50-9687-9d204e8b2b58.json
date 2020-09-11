@@ -2,27 +2,28 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "ball",
-			"id": "f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c",
-			"uniqueId": 11,
+			"name": "wall",
+			"id": "c92ab90c-f460-4f50-9687-9d204e8b2b58",
+			"uniqueId": 581,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				0.23371357617311567,
-				-0.10572081711835296,
-				1.1254070108955097
+				38.282767200659194,
+				-13.013457552869998,
+				-35.21559719102992
 			],
-			"rotation": [
+			"rotationQuaternion": [
 				0,
+				0.9429807673259789,
 				0,
-				0
+				0.3328472154676955
 			],
 			"scaling": [
-				0.43787967043566056,
-				0.43787967043566056,
-				0.43787967043566056
+				0.018789808033278985,
+				26.760833740234375,
+				15.551678912123581
 			],
-			"localMatrix": {
+			"pivotMatrix": {
 				"0": 1,
 				"1": 0,
 				"2": 0,
@@ -41,20 +42,23 @@
 				"15": 1
 			},
 			"isEnabled": true,
-			"isVisible": false,
+			"isVisible": true,
 			"infiniteDistance": false,
 			"pickable": true,
 			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": false,
+			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
-			"parentId": "2e391261-067a-4ec6-8b00-25d7e0738684",
 			"isUnIndexed": false,
-			"geometryId": "634db432-f90d-42a7-96b0-e58ebbe16033",
+			"geometryId": "c5051d88-f7d9-4168-b8f4-b778cbe9fa78",
 			"subMeshes": null,
-			"materialId": "0b776f6c-9111-499d-8207-1c8242d97719",
+			"materialId": "965b4240-9156-4704-8e39-cc381d3c7123",
+			"physicsMass": 0,
+			"physicsFriction": 0.2,
+			"physicsRestitution": 0,
+			"physicsImpostor": 2,
 			"metadata": {
 				"isPickable": true,
 				"script": {}
@@ -65,14 +69,14 @@
 			"layerMask": 268435455,
 			"alphaIndex": 1.7976931348623157e+308,
 			"hasVertexAlpha": false,
-			"overlayAlpha": 0.5,
+			"overlayAlpha": 0.3,
 			"overlayColor": [
 				1,
 				0,
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/634db432-f90d-42a7-96b0-e58ebbe16033.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/c5051d88-f7d9-4168-b8f4-b778cbe9fa78.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
 				0.5,
@@ -85,33 +89,33 @@
 			],
 			"_binaryInfo": {
 				"positionsAttrDesc": {
-					"count": 7245,
+					"count": 72,
 					"stride": 3,
 					"offset": 0,
 					"dataType": 1
 				},
 				"normalsAttrDesc": {
-					"count": 7245,
+					"count": 72,
 					"stride": 3,
-					"offset": 28980,
+					"offset": 288,
 					"dataType": 1
 				},
 				"uvsAttrDesc": {
-					"count": 4830,
+					"count": 48,
 					"stride": 2,
-					"offset": 57960,
+					"offset": 576,
 					"dataType": 1
 				},
 				"indicesAttrDesc": {
-					"count": 13872,
+					"count": 36,
 					"stride": 1,
-					"offset": 77280,
+					"offset": 768,
 					"dataType": 0
 				},
 				"subMeshesAttrDesc": {
 					"count": 1,
 					"stride": 5,
-					"offset": 132768,
+					"offset": 912,
 					"dataType": 0
 				}
 			},
