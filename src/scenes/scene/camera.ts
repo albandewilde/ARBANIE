@@ -21,6 +21,7 @@ export default class PlayerCamera extends FreeCamera {
     @visibleInInspector("number", "Ball Force Factor", 1)
     private _ballForceFactor: number;
 
+
     /**
      * Override constructor.
      * @warn do not fill.
