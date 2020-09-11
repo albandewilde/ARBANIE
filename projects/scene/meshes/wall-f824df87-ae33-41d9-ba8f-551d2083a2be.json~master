@@ -1,0 +1,200 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "wall",
+			"id": "f824df87-ae33-41d9-ba8f-551d2083a2be",
+			"uniqueId": 8,
+			"type": "Mesh",
+			"tags": "modified",
+			"position": [
+				4.142490387236722,
+				1.0113664867808594,
+				8.805089952003577
+			],
+			"rotationQuaternion": [
+				-0.0000063987422436184715,
+				-6.622166281999853e-8,
+				-0.000004063571395818144,
+				1
+			],
+			"scaling": [
+				1.000000000033034,
+				1.000000000114913,
+				1.0000000000818965
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": null,
+			"isUnIndexed": false,
+			"geometryId": "797496c5-d93b-4fc9-be11-d2d80c4edeb3",
+			"subMeshes": null,
+			"materialId": "965b4240-9156-4704-8e39-cc381d3c7123",
+			"physicsMass": 1,
+			"physicsFriction": 0.2,
+			"physicsRestitution": 1,
+			"physicsImpostor": 2,
+			"metadata": {
+				"isPickable": true,
+				"script": {}
+			},
+			"instances": [
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "2dacc31c-b006-4088-aaaf-50c86a795b6c",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": false,
+					"position": [
+						1.2475938056727514,
+						-1.1486514806928516,
+						5.998961188893033
+					],
+					"scaling": [
+						1,
+						1,
+						1
+					],
+					"rotationQuaternion": [
+						-0.0000011568754283834286,
+						0.3419781199760246,
+						0.0000016265052029622553,
+						0.9397079149680926
+					],
+					"physicsMass": 1,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 1,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				},
+				{
+					"name": "wall (Mesh Instance)",
+					"id": "b6f5c00a-61f9-48a2-a448-70f69392c07a",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": false,
+					"position": [
+						7.0082166347073604,
+						-1.1347532272441558,
+						2.2881103390006055
+					],
+					"scaling": [
+						1,
+						1,
+						1
+					],
+					"rotationQuaternion": [
+						-9.053079075032571e-7,
+						0.3419781216443965,
+						0.0000012728146745193104,
+						0.9397079143617609
+					],
+					"physicsMass": 1,
+					"physicsFriction": 0.2,
+					"physicsRestitution": 1,
+					"physicsImpostor": 2,
+					"metadata": {
+						"isPickable": true,
+						"script": {}
+					},
+					"animations": [],
+					"ranges": []
+				}
+			],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/797496c5-d93b-4fc9-be11-d2d80c4edeb3.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				0.5,
+				0.5,
+				0.5
+			],
+			"boundingBoxMinimum": [
+				-0.5,
+				-0.5,
+				-0.5
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 72,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 72,
+					"stride": 3,
+					"offset": 288,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 48,
+					"stride": 2,
+					"offset": 576,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 36,
+					"stride": 1,
+					"offset": 768,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 912,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

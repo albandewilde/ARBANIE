@@ -1,4 +1,4 @@
-import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Sound } from "@babylonjs/core";
+import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Sound, Scene } from "@babylonjs/core";
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../tools";
 
@@ -21,7 +21,9 @@ export default class PlayerCamera extends FreeCamera {
     @visibleInInspector("number", "Ball Force Factor", 1)
     private _ballForceFactor: number;
 
-    private _gunshot: Sound
+    private _gunshot: Sound;
+    public _scene: Scene;
+    private _score: number;
 
     /**
      * Override constructor.
@@ -40,6 +42,8 @@ export default class PlayerCamera extends FreeCamera {
         this.keysDown = [this._backwardKey];
         this.keysLeft = [this._strafeLeftKey];
         this.keysRight = [this._strafeRightKey];
+        this._scene = this.getScene();
+        this._score = 0;
         this._gunshot = new Sound("gunshot", "projects/scene/sounds/ooh.mp3", this.getScene());
     }
 
@@ -58,6 +62,7 @@ export default class PlayerCamera extends FreeCamera {
     private _onPointerEvent(info: PointerInfo): void {
         this._enterPointerLock();
         this._launchBall(info);
+        this._playShootSound();
     }
 
     /**
@@ -93,12 +98,22 @@ export default class PlayerCamera extends FreeCamera {
         // Create physics impostor for the ball instance
         ballInstance.physicsImpostor = new PhysicsImpostor(ballInstance, PhysicsImpostor.SphereImpostor, { mass: 1, friction: 0.2, restitution: 0.2 });
 
-        // Play sound on ball shooted
-        this._gunshot.setVolume(1)
-        this._gunshot.play()
-
         // Apply impulse on ball
         const force = this.getDirection(new Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
         ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
+
+        const meshes = this._scene.getActiveMeshes();
+        meshes.forEach( m => {
+            if( m.name === 'wall' ) {
+                if( ballInstance.intersectsMesh(m, true) ) {
+                    this._score += 1;
+                    console.log(this._score)
+                }
+            }
+        } );
+    }
+
+    private _playShootSound(): void {
+        this._gunshot.play();
     }
 }
