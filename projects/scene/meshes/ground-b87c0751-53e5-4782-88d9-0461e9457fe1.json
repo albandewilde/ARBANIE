@@ -9,7 +9,7 @@
 			"tags": "modified",
 			"position": [
 				0,
-				-0.17133099096016569,
+				0,
 				0
 			],
 			"rotationQuaternion": [
@@ -20,7 +20,7 @@
 			],
 			"scaling": [
 				100,
-				0.10000000149011612,
+				0.1,
 				100
 			],
 			"localMatrix": {

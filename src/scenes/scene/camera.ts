@@ -125,7 +125,7 @@ export default class PlayerCamera extends FreeCamera {
         const meshes = this._scene.meshes;
         meshes.forEach( m => {
             this._balls.forEach( b => {
-                if( m.name === 'target' ) {
+                if( m.name === 'New Cube' ) {
                     if( b.intersectsMesh( m, true ) ) {
                         this._score += 1;
                         this._playTargetHitSound();
