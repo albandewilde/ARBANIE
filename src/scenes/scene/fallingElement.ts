@@ -1,4 +1,4 @@
-import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3, CubeTexture, Texture, PhysicsImpostor, MeshBuilder, OimoJSPlugin, InstancedMesh } from "@babylonjs/core";
+import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3, CubeTexture, Texture, PhysicsImpostor, MeshBuilder, OimoJSPlugin, InstancedMesh, Sound } from "@babylonjs/core";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -21,9 +21,11 @@ import { Node, Scene, Mesh, StandardMaterial, Color3, SpotLight, Vector3, CubeTe
 export default class FallingElement {
     private scene: Scene;
     private sphereArray: Array<Mesh> = [];
+    private _fallingSound: Sound;
 
     public constructor(scene: Scene) {
         this.scene = scene;
+        this._fallingSound = new Sound("falling", "projects/scene/sounds/falling.mp3", this.scene);
     }
     
     private randomNumber(): number {
@@ -67,6 +69,10 @@ export default class FallingElement {
     public createBall(): void {
         setInterval(this.newBallInstance.bind(this), 1000)
     } 
+
+    public playFallingSound(): void {
+        this._fallingSound.play();
+    }
 
 
     /**
