@@ -16,13 +16,13 @@ export class Game {
 
     private _ambiantMusic: Sound;
     private _fallingElem: FallingElement;
-
     /**
      * Constructor.
      */
     public constructor() {
         this.engine = new Engine(document.getElementById("renderCanvas") as HTMLCanvasElement, true);
         this.scene = new Scene(this.engine);
+
         
         this._ambiantMusic = new Sound("Music", "projects/scene/sounds/09_-_Shake_a_Leg.ogg", this.scene, null, {
             loop: true,
@@ -54,7 +54,9 @@ export class Game {
                 runScene(this.scene, rootUrl);
 
                 // Render.
-                this.engine.runRenderLoop(() => this.scene.render());
+                this.engine.runRenderLoop(() => {
+                    this.scene.render();
+                });
             });
         }, undefined, (_, message) => {
             console.error(message);

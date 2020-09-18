@@ -2,6 +2,7 @@ import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vect
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../tools";
 import { Hud } from "./hud";
+import { Artifice } from "./artifice";
 
 export default class PlayerCamera extends FreeCamera {
     @fromChildren("ball")
@@ -22,12 +23,15 @@ export default class PlayerCamera extends FreeCamera {
     @visibleInInspector("number", "Ball Force Factor", 1)
     private _ballForceFactor: number;
 
+    private _ballsCount: number;
     private _gunshot: Sound;
     private _targetHit: Sound;
     public _scene: Scene;
     private _score: number;
     private _balls: Array<InstancedMesh>;
     private _ui: Hud;
+    private _firework: Artifice;
+    private _fireworks: Array<Artifice> = [];
 
     /**
      * Override constructor.
@@ -49,9 +53,12 @@ export default class PlayerCamera extends FreeCamera {
         this._scene = this.getScene();
         this._balls = [];
         this._score = 0;
+        this._ballsCount = 15;
         this._gunshot = new Sound("gunshot", "projects/scene/sounds/ooh.mp3", this.getScene());
-        this._targetHit = new Sound("targetHit", "projects/scene/sounds/bruh.mp3", this.getScene());
+        this._targetHit = new Sound("targetHit", "projects/scene/sounds/fireworks.mp3", this.getScene());
         this._ui = new Hud(this._scene);
+        this.fov = 0.9;
+        this._firework = new Artifice(this._scene);
     }
 
     /**
@@ -60,7 +67,17 @@ export default class PlayerCamera extends FreeCamera {
     public onUpdate(): void {
         // Nothing to do now...
         this._checkBallCollisions();
-        this._ui.updateHud( this._score );
+        this._ui.updateHud( this._score, this._ballsCount );
+
+        if( this._ballsCount <= 0 ) {
+            if( !this._ui.isErrorDrawn() ) {
+                this._ui.drawError();
+            }
+        } else {
+            if( this._ui.isErrorDrawn() ) {
+                this._ui.removeError();
+            }
+        }
     }
 
     /**
@@ -100,18 +117,21 @@ export default class PlayerCamera extends FreeCamera {
      * Launches a new ball from the camera position to the camera direction.
      */
     private _launchBall(info: PointerInfo): void {
-        // Create a new ball instance
-        const ballInstance = this._ball.createInstance("ballInstance");
-        ballInstance.position.copyFrom(this._ball.getAbsolutePosition());
-
-        // Create physics impostor for the ball instance
-        ballInstance.physicsImpostor = new PhysicsImpostor(ballInstance, PhysicsImpostor.SphereImpostor, { mass: 1, friction: 0.2, restitution: 0.2 });
-
-        // Apply impulse on ball
-        const force = this.getDirection(new Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
-        ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
-
-        this._balls.push( ballInstance );
+        if( this._ballsCount > 0 ) {
+            // Create a new ball instance
+            const ballInstance = this._ball.createInstance("ballInstance");
+            ballInstance.position.copyFrom(this._ball.getAbsolutePosition());
+    
+            // Create physics impostor for the ball instance
+            ballInstance.physicsImpostor = new PhysicsImpostor(ballInstance, PhysicsImpostor.SphereImpostor, { mass: 1, friction: 0.2, restitution: 0.2 });
+    
+            // Apply impulse on ball
+            const force = this.getDirection(new Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
+            ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
+    
+            this._balls.push( ballInstance );
+            this._ballsCount -= 1;
+        }
     }
 
     private _playShootSound(): void {
@@ -131,6 +151,13 @@ export default class PlayerCamera extends FreeCamera {
                         this._score += 1;
                         this._playTargetHitSound();
                         this._balls.splice( this._balls.findIndex( ball => ball === b), 1 );
+
+                        this._ballsCount += 1;
+
+                        const x = Math.random() * 50;
+                        const z = Math.random() * 50;
+                        this._firework.shoot(x, -20, z);
+                        this._fireworks.push(this._firework);
                     }
                 }
             } );
