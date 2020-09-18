@@ -154,6 +154,7 @@ export default class PlayerCamera extends FreeCamera {
 
                         this._ballsCount += 1;
 
+                        this._firework = new Artifice(this._scene);
                         const x = Math.random() * 50;
                         const z = Math.random() * 50;
                         this._firework.shoot(x, -20, z);
